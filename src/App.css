@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body, html {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.DemoNav {
+  background-color: #00050A;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.DemoNav * {
+  box-sizing: border-box;
+}
+
+.DemoNav a {
+  transition: all .15s ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.DemoNav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.DemoNav-logo,
+.DemoNav-buttons {
+  width: 280px;
+}
+
+.DemoNav-logo {
+  fill: #fff;
+}
+
+.DemoNav-logo svg {
+  display: block;
+}
+
+.DemoNav-menu {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  text-align-last: center;
+  padding: 8px 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.DemoNav-mobileOnly {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .DemoNav-mobileOnly {
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.DemoNav-buttons {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 720px) {
+  .DemoNav-buttons {
+    display: none;
+  }
+}
+
+.DemoNav-button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 32px;
+  border: 1px solid transparent;
+  text-align: center;
+  padding: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-left: 4px;
+  white-space: nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.DemoNav-button-primary {
+  border-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DemoNav-button-primary:hover {
+  background-color: #fff;
+  color: #00050A;
+}
+
+.DemoNav-button-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
