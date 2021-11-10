@@ -1,6 +1,6 @@
 /// <reference types="react-scripts" />
 import React from 'react';
-import { ReactComponent as Logo } from "./logo.svg";
+import logo from "./logo.svg";
 import './DemoNavigation.css';
 var demos = [
     {
@@ -37,7 +37,7 @@ export var DemoNavigation = function () {
     return (React.createElement("div", { className: "DemoNavigation" },
         React.createElement("div", { className: "DemoNavigation__inner" },
             React.createElement("a", { href: "https://www.speechly.com/", className: "DemoNavigation__logo" },
-                React.createElement(Logo, null)),
+                React.createElement("img", { src: logo, alt: "Speechly" })),
             React.createElement("select", { className: "DemoNavigation__menu", name: "cars", id: "cars", onChange: handleSelect, value: resolveCurrentDemo() },
                 React.createElement("option", { value: "default", disabled: true }, "Speechly Demos"),
                 demos.map(function (demo) { return React.createElement("option", { key: demo.pathname, value: demo.pathname }, demo.label); }),

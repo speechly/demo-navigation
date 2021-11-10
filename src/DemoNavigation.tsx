@@ -1,6 +1,6 @@
 /// <reference types="react-scripts" />
 import React from 'react';
-import { ReactComponent as Logo} from "./logo.svg";
+import logo from "./logo.svg";
 import './DemoNavigation.css';
 
 const demos = [
@@ -42,7 +42,7 @@ export const DemoNavigation: React.FC = () => {
     <div className="DemoNavigation">
       <div className="DemoNavigation__inner">
         <a href="https://www.speechly.com/" className="DemoNavigation__logo">
-          <Logo />
+          <img src={logo} alt="Speechly" />
         </a>
         <select className="DemoNavigation__menu" name="cars" id="cars" onChange={handleSelect} value={resolveCurrentDemo()}>
           <option value="default" disabled>Speechly Demos</option>
