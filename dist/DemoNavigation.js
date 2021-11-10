@@ -1,12 +1,6 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.DemoNavigation = void 0;
-var react_1 = __importDefault(require("react"));
-var logo_svg_1 = require("./logo.svg");
-require("./DemoNavigation.css");
+import React from 'react';
+import { ReactComponent as Logo } from "./logo.svg";
+import './DemoNavigation.css';
 var demos = [
     {
         pathname: '/flight-booking',
@@ -38,21 +32,20 @@ var resolveCurrentDemo = function () {
     var current = demos.find(function (d) { return d.pathname === pathname; });
     return (current === null || current === void 0 ? void 0 : current.pathname) || 'default';
 };
-var DemoNavigation = function () {
-    return (react_1.default.createElement("div", { className: "DemoNavigation" },
-        react_1.default.createElement("div", { className: "DemoNavigation__inner" },
-            react_1.default.createElement("a", { href: "https://www.speechly.com/", className: "DemoNavigation__logo" },
-                react_1.default.createElement(logo_svg_1.ReactComponent, null)),
-            react_1.default.createElement("select", { className: "DemoNavigation__menu", name: "cars", id: "cars", onChange: handleSelect, value: resolveCurrentDemo() },
-                react_1.default.createElement("option", { value: "default", disabled: true }, "Speechly Demos"),
-                demos.map(function (demo) { return react_1.default.createElement("option", { key: demo.pathname, value: demo.pathname }, demo.label); }),
-                react_1.default.createElement("option", { className: "DemoNavigation__mobileOnly", disabled: true }, "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"),
-                react_1.default.createElement("option", { className: "DemoNavigation__mobileOnly", value: "https://www.speechly.com/contact/" }, "Contact Sales"),
-                react_1.default.createElement("option", { className: "DemoNavigation__mobileOnly", value: "https://github.com/speechly/speechly" }, "View on GitHub"),
-                react_1.default.createElement("option", { className: "DemoNavigation__mobileOnly", value: "https://api.speechly.com/dashboard/" }, "Start Developing")),
-            react_1.default.createElement("div", { className: "DemoNavigation__buttons" },
-                react_1.default.createElement("a", { href: "https://www.speechly.com/contact/", className: "DemoNavigation__button DemoNavigation__button-secondary" }, "Contact Sales"),
-                react_1.default.createElement("a", { href: "https://github.com/speechly/speechly", className: "DemoNavigation__button DemoNavigation__button-secondary" }, "View on GitHub"),
-                react_1.default.createElement("a", { href: "https://api.speechly.com/dashboard/", className: "DemoNavigation__button DemoNavigation__button-primary" }, "Start Developing")))));
+export var DemoNavigation = function () {
+    return (React.createElement("div", { className: "DemoNavigation" },
+        React.createElement("div", { className: "DemoNavigation__inner" },
+            React.createElement("a", { href: "https://www.speechly.com/", className: "DemoNavigation__logo" },
+                React.createElement(Logo, null)),
+            React.createElement("select", { className: "DemoNavigation__menu", name: "cars", id: "cars", onChange: handleSelect, value: resolveCurrentDemo() },
+                React.createElement("option", { value: "default", disabled: true }, "Speechly Demos"),
+                demos.map(function (demo) { return React.createElement("option", { key: demo.pathname, value: demo.pathname }, demo.label); }),
+                React.createElement("option", { className: "DemoNavigation__mobileOnly", disabled: true }, "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"),
+                React.createElement("option", { className: "DemoNavigation__mobileOnly", value: "https://www.speechly.com/contact/" }, "Contact Sales"),
+                React.createElement("option", { className: "DemoNavigation__mobileOnly", value: "https://github.com/speechly/speechly" }, "View on GitHub"),
+                React.createElement("option", { className: "DemoNavigation__mobileOnly", value: "https://api.speechly.com/dashboard/" }, "Start Developing")),
+            React.createElement("div", { className: "DemoNavigation__buttons" },
+                React.createElement("a", { href: "https://www.speechly.com/contact/", className: "DemoNavigation__button DemoNavigation__button-secondary" }, "Contact Sales"),
+                React.createElement("a", { href: "https://github.com/speechly/speechly", className: "DemoNavigation__button DemoNavigation__button-secondary" }, "View on GitHub"),
+                React.createElement("a", { href: "https://api.speechly.com/dashboard/", className: "DemoNavigation__button DemoNavigation__button-primary" }, "Start Developing")))));
 };
-exports.DemoNavigation = DemoNavigation;
