@@ -1,7 +1,7 @@
 {
   "name": "@speechly/demo-navigation",
   "description": "Global navigation component for our demos",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/speechly/demo-navigation",
   "main": "dist/index.js",
   "author": "Speechly",
