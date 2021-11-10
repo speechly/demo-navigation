@@ -1,3 +1,4 @@
+/// <reference types="react-scripts" />
 import React from 'react';
 import { ReactComponent as Logo } from "./logo.svg";
 import './DemoNavigation.css';
