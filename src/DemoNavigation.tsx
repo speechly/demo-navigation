@@ -36,7 +36,7 @@ const resolveCurrentDemo = () => {
   return current?.pathname || 'default';
 }
 
-export const DemoNavigation = () => {
+export const DemoNavigation: React.FC<{}> = () => {
   return (
     <div className="DemoNavigation">
       <div className="DemoNavigation__inner">

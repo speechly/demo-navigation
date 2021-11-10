@@ -1,3 +1,3 @@
-/// <reference types="react" />
+import React from 'react';
 import './DemoNavigation.css';
-export declare const DemoNavigation: () => JSX.Element;
+export declare const DemoNavigation: React.FC<{}>;
