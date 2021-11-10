@@ -58,10 +58,15 @@
   -webkit-appearance: auto;
   -moz-appearance: auto;
   appearance: auto;
+  background-image: none;
 }
 
 .DemoNavigation__menu:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.DemoNavigation__menu:focus {
+  box-shadow: none;
 }
 
 .DemoNavigation__mobileOnly {
