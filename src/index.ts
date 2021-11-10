@@ -1,1 +1,2 @@
-export * from './DemoNavigation'
+import DemoNavigation from './DemoNavigation';
+export { DemoNavigation };
