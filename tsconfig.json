@@ -18,6 +18,7 @@
       "allowSyntheticDefaultImports": true,
       "strict":false
     },
+    "files": ["custom.d.ts"],
     "include": ["src"],
     "exclude": ["node_modules", "lib"]
   }
