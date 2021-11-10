@@ -1,9 +1,15 @@
 {
-  "name": "@tofusoup429/react-component-module-frame",
-  "version": "0.0.10",
-  "description": "React module frame",
-  "homepage": "https://github.com/tofusoup429/react-component-module-frame",
+  "name": "@speechly/demo-navigation",
+  "description": "Global navigation component for our demos",
+  "version": "0.1.5",
+  "homepage": "https://github.com/speechly/demo-navigation",
   "main": "dist/index.js",
+  "author": "Speechly",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/speechly/demo-navigation.git"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc"
