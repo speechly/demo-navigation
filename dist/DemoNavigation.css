@@ -34,7 +34,8 @@
   fill: #fff;
 }
 
-.DemoNavigation__logo svg {
+.DemoNavigation__logo svg,
+.DemoNavigation__logo img {
   display: block;
 }
 
