@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "./logo.svg";
+import { ReactComponent as Logo} from "./logo.svg";
 import './DemoNavigation.css';
 
 const demos = [
