@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
-var logo_svg_1 = __importDefault(require("./logo.svg"));
+var logo_svg_1 = require("./logo.svg");
 require("./DemoNavigation.css");
 var demos = [
     {
@@ -41,7 +41,7 @@ var DemoNavigation = function () {
     return (react_1.default.createElement("div", { className: "DemoNavigation" },
         react_1.default.createElement("div", { className: "DemoNavigation__inner" },
             react_1.default.createElement("a", { href: "https://www.speechly.com/", className: "DemoNavigation__logo" },
-                react_1.default.createElement(logo_svg_1.default, null)),
+                react_1.default.createElement(logo_svg_1.ReactComponent, null)),
             react_1.default.createElement("select", { className: "DemoNavigation__menu", name: "cars", id: "cars", onChange: handleSelect, value: resolveCurrentDemo() },
                 react_1.default.createElement("option", { value: "default", disabled: true }, "Speechly Demos"),
                 demos.map(function (demo) { return react_1.default.createElement("option", { key: demo.pathname, value: demo.pathname }, demo.label); }),
