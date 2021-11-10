@@ -1,6 +1,6 @@
 .DemoNavigation {
   background-color: #00050A;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system,BlinkMacSystemFont, sans-serif;
   font-size: 13px;
   line-height: 1;
 }
@@ -9,7 +9,8 @@
   box-sizing: border-box;
 }
 
-.DemoNavigation a {
+.DemoNavigation a,
+.DemoNavigation select {
   transition: all .15s ease;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -43,15 +44,24 @@
   background-color: transparent;
   border: none;
   color: #fff;
+  font-size: 13px;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system,BlinkMacSystemFont, sans-serif;
   outline: none;
   text-align-last: center;
-  padding: 8px 0;
-  border-radius: 100px;
+  padding: 8px 0 !important;
+  border-radius: 4px;
   cursor: pointer;
   width: 160px;
-  height: 100%;
+  margin: 0;
+  text-transform: none;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+}
+
+.DemoNavigation__menu:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .DemoNavigation__mobileOnly {
