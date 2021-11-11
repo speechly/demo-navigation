@@ -10,6 +10,11 @@ yarn publish
 
 ## Local development
 
-1. Create separate test project, e.g. `npx create-react-app test-demo-nav`
-2. Symlink demo-navigation package using [yarn link](https://classic.yarnpkg.com/en/docs/cli/link)
-3. Profit
+```
+cd ~/projects
+npx create-react-app test-demo-navigation
+cd ~/projects/demo-navigation
+yarn link
+cd ~/projects/test-demo-navigation
+yarn link @speechly/demo-navigation
+```
