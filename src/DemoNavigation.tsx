@@ -73,14 +73,14 @@ export const DemoNavigation: React.FC = () => {
           )}
           <option className="DemoNavigation__mobileOnly" disabled>──────────</option>
           {actions.map(action =>
-            <option key={action.url} value={action.url} className="DemoNavigation__mobileOnly">
+            <option key={'opt' + action.url} value={action.url} className="DemoNavigation__mobileOnly">
               {action.label}
             </option>
           )}
         </select>
         <div className="DemoNavigation__buttons">
           {actions.map(action =>
-            <a href={action.url + urlRef} className={`DemoNavigation__button DemoNavigation__button-${action.type}`}>
+            <a key={'btn' + action.url} href={action.url + urlRef} className={`DemoNavigation__button DemoNavigation__button-${action.type}`}>
               {action.label}
             </a>
           )}
