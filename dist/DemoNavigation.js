@@ -63,9 +63,9 @@ export var DemoNavigation = function () {
                 }),
                 React.createElement("option", { className: "DemoNavigation__mobileOnly", disabled: true }, "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"),
                 actions.map(function (action) {
-                    return React.createElement("option", { key: action.url, value: action.url, className: "DemoNavigation__mobileOnly" }, action.label);
+                    return React.createElement("option", { key: 'opt' + action.url, value: action.url, className: "DemoNavigation__mobileOnly" }, action.label);
                 })),
             React.createElement("div", { className: "DemoNavigation__buttons" }, actions.map(function (action) {
-                return React.createElement("a", { href: action.url + urlRef, className: "DemoNavigation__button DemoNavigation__button-" + action.type }, action.label);
+                return React.createElement("a", { key: 'btn' + action.url, href: action.url + urlRef, className: "DemoNavigation__button DemoNavigation__button-" + action.type }, action.label);
             })))));
 };
