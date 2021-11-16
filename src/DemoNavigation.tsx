@@ -9,12 +9,12 @@ const demos = [
     label: 'Flight Booking'
   },
   {
-    pathname: '/voice-picking',
-    label: 'Voice Picking'
+    pathname: '/fashion-ecommerce',
+    label: 'Fashion eCommerce'
   },
   {
-    pathname: '/fast-food',
-    label: 'Fast Food'
+    pathname: '/smart-home',
+    label: 'Smart Home'
   },
   {
     pathname: '/speech-to-text',
