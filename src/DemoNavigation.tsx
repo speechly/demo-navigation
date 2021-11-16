@@ -61,10 +61,10 @@ export const DemoNavigation: React.FC = () => {
   return (
     <div className="DemoNavigation">
       <div className="DemoNavigation__inner">
-        <a href="https://www.speechly.com/" className="DemoNavigation__logo">
+        <a href="https://www.speechly.com/" className="DemoNavigation__logo" tabIndex={-1}>
           <img src={logo} alt="Speechly" />
         </a>
-        <select className="DemoNavigation__menu" name="cars" id="cars" onChange={handleSelect} value={resolveCurrentDemo()}>
+        <select className="DemoNavigation__menu" onChange={handleSelect} value={resolveCurrentDemo()} tabIndex={-1}>
           <option value="default" disabled>Speechly Demos</option>
           {demos.map(demo =>
             <option key={demo.pathname} value={demo.pathname}>
@@ -80,7 +80,7 @@ export const DemoNavigation: React.FC = () => {
         </select>
         <div className="DemoNavigation__buttons">
           {actions.map(action =>
-            <a key={'btn' + action.url} href={action.url + urlRef} className={`DemoNavigation__button DemoNavigation__button-${action.type}`}>
+            <a key={'btn' + action.url} href={action.url + urlRef} className={`DemoNavigation__button DemoNavigation__button-${action.type}`} tabIndex={-1}>
               {action.label}
             </a>
           )}
