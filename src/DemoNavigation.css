@@ -1,14 +1,17 @@
 .DemoNavigation {
   background-color: #00050A;
-  font-family: 'Inter', -apple-system,BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 13px;
   line-height: 1;
   position: relative;
   z-index: 10;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .DemoNavigation * {
   box-sizing: border-box;
+  text-transform: none;
 }
 
 .DemoNavigation a,
@@ -56,7 +59,6 @@
   cursor: pointer;
   width: 160px;
   margin: 0;
-  text-transform: none;
   -webkit-appearance: auto;
   -moz-appearance: auto;
   appearance: auto;
