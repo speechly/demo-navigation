@@ -46,7 +46,7 @@
 }
 
 .DemoNavigation__menu {
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNyAxMGw1IDUgNS01SDd6Ii8+PC9zdmc+) no-repeat 100% 50%;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNyAxMGw1IDUgNS01SDd6Ii8+PC9zdmc+) no-repeat 100% 50% !important;
   border: none;
   color: #fff;
   font-size: 13px;
@@ -58,7 +58,7 @@
   cursor: pointer;
   width: 168px;
   margin: 0;
-	-moz-appearance: none;
+	-moz-appearance: none !important;
 	-webkit-appearance: none;
 	appearance: none;
 }
