@@ -42,6 +42,7 @@ var actions = [
     },
 ];
 var urlRef = '?ref=demoNav';
+var canHover = matchMedia('(hover: hover)').matches;
 var handleSelect = function (e) {
     var value = e.currentTarget.value + urlRef;
     window.open(value, '_self');
@@ -61,8 +62,8 @@ export var DemoNavigation = function () {
                 demos.map(function (demo) {
                     return React.createElement("option", { key: demo.pathname, value: demo.pathname }, demo.label);
                 }),
-                React.createElement("option", { className: "DemoNavigation__mobileOnly", disabled: true }, "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"),
-                actions.map(function (action) {
+                !canHover && React.createElement("option", { className: "DemoNavigation__mobileOnly", disabled: true }, "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"),
+                !canHover && actions.map(function (action) {
                     return React.createElement("option", { key: 'opt' + action.url, value: action.url, className: "DemoNavigation__mobileOnly" }, action.label);
                 })),
             React.createElement("div", { className: "DemoNavigation__buttons" }, actions.map(function (action) {

@@ -46,6 +46,8 @@ const actions = [
 
 const urlRef = '?ref=demoNav'
 
+const canHover = matchMedia('(hover: hover)').matches
+
 const handleSelect = (e: React.FormEvent<HTMLSelectElement>) => {
   const value: string = e.currentTarget.value + urlRef
   window.open(value, '_self');
@@ -71,8 +73,8 @@ export const DemoNavigation: React.FC = () => {
               {demo.label}
             </option>
           )}
-          <option className="DemoNavigation__mobileOnly" disabled>──────────</option>
-          {actions.map(action =>
+          {!canHover && <option className="DemoNavigation__mobileOnly" disabled>──────────</option>}
+          {!canHover && actions.map(action =>
             <option key={'opt' + action.url} value={action.url} className="DemoNavigation__mobileOnly">
               {action.label}
             </option>
