@@ -5,12 +5,12 @@ import './DemoNavigation.css';
 
 const demos = [
   {
-    pathname: '/flight-booking',
+    pathname: '/booking',
     label: 'Flight Booking'
   },
   {
-    pathname: '/fashion-ecommerce',
-    label: 'Fashion eCommerce'
+    pathname: '/fashion',
+    label: 'Fashion Ecommerce'
   },
   {
     pathname: '/smart-home',
@@ -21,7 +21,7 @@ const demos = [
     label: 'Speech-to-Text'
   },
   {
-    pathname: '/ecommerce-checkout',
+    pathname: '/checkout',
     label: 'Ecommerce Checkout'
   }
 ]
