@@ -18,10 +18,6 @@ var demos = [
     {
         pathname: '/speech-to-text/',
         label: 'Speech-to-Text'
-    },
-    {
-        pathname: '/checkout/',
-        label: 'Ecommerce Checkout'
     }
 ];
 var actions = [
