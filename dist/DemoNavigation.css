@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
 .DemoNavigation {
   background-color: #00050A;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 13px;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1;
   position: relative;
   z-index: 10;
@@ -43,15 +46,17 @@
 .DemoNavigation__logo svg,
 .DemoNavigation__logo img {
   display: block;
+  height: 24px;
+  width: auto;
 }
 
 .DemoNavigation__menu {
   background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNyAxMGw1IDUgNS01SDd6Ii8+PC9zdmc+) no-repeat 100% 50% !important;
   border: none;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  font-family: 'Inter', -apple-system,BlinkMacSystemFont, sans-serif;
+  font-family: 'DM Sans', -apple-system,BlinkMacSystemFont, sans-serif;
   outline: none;
   padding: 8px 20px 8px 8px !important;
   border-radius: 4px;

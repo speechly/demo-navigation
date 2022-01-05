@@ -25,17 +25,17 @@ const demos = [
 const actions = [
   {
     url: 'https://www.speechly.com/contact/',
-    label: 'Contact Sales',
+    label: 'Contact us',
     type: 'secondary'
   },
   {
     url: 'https://github.com/speechly/speechly',
-    label: 'View on GitHub',
+    label: 'View GitHub',
     type: 'secondary'
   },
   {
     url: 'https://api.speechly.com/dashboard/',
-    label: 'Start Developing',
+    label: 'Start building',
     type: 'primary'
   },
 ]
