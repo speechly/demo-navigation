@@ -5,20 +5,24 @@ import './DemoNavigation.css';
 
 const demos = [
   {
-    pathname: '/booking/',
-    label: 'Flight Booking'
-  },
-  {
     pathname: '/fashion/',
     label: 'Fashion Ecommerce'
   },
   {
-    pathname: '/smart-home/',
-    label: 'Smart Home'
+    pathname: '/booking/',
+    label: 'Flight Booking'
+  },
+  {
+    pathname: '/voice-search/',
+    label: 'Voice Search'
   },
   {
     pathname: '/speech-to-text/',
-    label: 'Speech-to-Text'
+    label: 'Instant Messaging'
+  },
+  {
+    pathname: '/smart-home/',
+    label: 'Smart Home'
   }
 ]
 
