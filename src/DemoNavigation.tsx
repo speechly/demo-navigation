@@ -5,6 +5,10 @@ import './DemoNavigation.css';
 
 const demos = [
   {
+    pathname: '/moderation/',
+    label: 'Moderation'
+  },
+  {
     pathname: '/fashion/',
     label: 'Fashion Ecommerce'
   },

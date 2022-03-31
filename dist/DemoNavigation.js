@@ -4,6 +4,10 @@ import logo from "./logo.svg";
 import './DemoNavigation.css';
 var demos = [
     {
+        pathname: '/moderation/',
+        label: 'Moderation'
+    },
+    {
         pathname: '/fashion/',
         label: 'Fashion Ecommerce'
     },
